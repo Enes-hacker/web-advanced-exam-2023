@@ -1,0 +1,517 @@
+/*Main SECTION*/
+.logo {
+  width: 6rem;
+  height: auto;
+
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  margin-left: 7rem;
+}
+
+.menu {
+  width: 100%;
+}
+
+:root {
+  --main-color: #e9751a;
+}
+
+:root {
+  --secondary-color: #fda406;
+}
+
+.i-right {
+  height: 80vh;
+  background: url(files/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+
+@media (max-width: 575.98px) {
+  .i-right {
+    display: none;
+  }
+
+  .i-left {
+    background: #e9eefc;
+  }
+
+  .i-left button {
+    background-color: #e9eefc !important;
+
+  }
+
+  .i-left h1:nth-child(1) {
+    text-align: center !important;
+  }
+
+  .i-left h1 {
+    font-size: 44px;
+  }
+
+  .hamburger {
+    color: var(--main-color) !important;
+  }
+}
+
+
+
+.i-left {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: baseline;
+
+}
+
+.i-left p {
+  margin-left: 2.3rem;
+  margin-top: 1rem;
+}
+
+.i-left button {
+  border: 2px solid #f0a971;
+  border-radius: 1rem;
+  padding: 0.2rem 1.8rem;
+  background: white;
+  color: #f0a971;
+  margin-right: 7.3rem;
+  margin-top: 1.2rem;
+
+}
+
+.i-left h1:nth-child(1) {
+  color: var(--secondary-color);
+}
+
+.i-left h1:nth-child(2) {
+  color: var(--main-color);
+}
+
+.i-left h1:nth-child(3) {
+  color: var(--main-color);
+  text-transform: uppercase;
+
+}
+
+/*Main SECTION*/
+
+/*ZA NAS*/
+.searchbar {
+  padding: 1rem 2rem;
+  box-shadow: 6px 6px 6px 6px rgba(1.2, 1.2, 1.2, 0.2);
+  ;
+}
+
+.searchbar button {
+  padding: 0.3rem 3rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  background: white;
+  margin-top: -2rem;
+}
+
+.searchbar input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.searchbar button {
+  flex-shrink: 0;
+  margin-left: 10px;
+  background: #8a1352;
+  color: white;
+  border: #8a1352;
+}
+
+@media (max-width: 575.98px) {
+  .searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6rem;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .searchbar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .searchbar button {
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    background: #8a1352;
+    color: black;
+    border: none;
+    max-width: 90vh;
+  }
+
+  .i-left button {
+    margin-left: 7.3rem;
+    margin-top: 1.2rem;
+  }
+
+  .i-left {
+    height: 90vh;
+
+  }
+}
+
+/*ZA NAS*/
+.za-nas-img {
+  height: 45vh;
+  background: url(files/team.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.za-nas h4 {
+  border-left: 0.4rem solid var(--secondary-color);
+  text-transform: uppercase;
+  padding: 0.02rem;
+}
+
+.za-nas button {
+  border: 2px solid #f0a971;
+  border-radius: 1rem;
+  width: 45%;
+  padding: 0.2rem 1rem;
+  text-align: center !important;
+  background: white;
+  color: #f0a971;
+}
+
+@media (max-width: 576px) {
+  .za-nas button {
+    width: 55%;
+
+  }
+
+  .za-nas-img {
+    width: 90vh !important;
+  }
+
+}
+
+/*ZA NAS*/
+
+/*Daily motivation*/
+
+
+.motivation-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.motivation-title h3,
+.motivation-title h3 {
+  border-left: 0.4rem solid var(--secondary-color);
+  padding-left: 0.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .motivation-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    flex-direction: column;
+  }
+
+  .motivation-title h3,
+  p {
+    width: 80%;
+    text-align: start !important;
+  }
+
+  .motivation-title h3 {
+    font-size: 28px;
+    margin-left: 0.1rem !important;
+  }
+
+}
+
+.learn-more {
+  border: 1px solid #f0a971;
+  border-radius: 0.9rem;
+  padding: 0.2rem 1.4rem;
+  background: white;
+  color: #f0a971;
+  text-align: center;
+}
+
+.quotes p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  .motivation-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    flex-direction: column;
+  }
+
+  .motivation-title p {
+    width: 90%;
+
+  }
+
+  .motivation-title h3 {
+    margin-left: 7rem;
+    font-size: 28px;
+  }
+
+}
+
+/*Daily motivation*/
+
+/*PRICES*/
+.price-description {
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+}
+
+.price-description p {
+  font-size: 0.8rem;
+}
+
+.title-price {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  
+}
+
+.motivation-title h3 {
+  text-align: center;
+}
+
+.pricing button {
+  border-radius: 0.9rem;
+  padding: 0rem 1rem;
+  /*first attr. is for up/down 2nd - left/right*/
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: white;
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+  .price-description.m-0.text-center.text-white p {
+    text-align: center;
+    margin-left: 2.5rem;
+  }
+
+  .prices {
+    width: 92%;
+  }
+}
+
+
+span {
+  border-radius: 0.9px;
+}
+
+
+/*PRICES END*/
+
+/**/
+.grid-section {
+  width: 85%;
+}
+
+.grid-btn {
+  border: 1px solid #f0a971;
+  border-radius: 0.9rem;
+  padding: 0.2rem 1.4rem;
+  background: white;
+  color: #f0a971;
+  text-align: center;
+}
+
+
+@media (max-width: 576px) {
+  .img-grids {
+    width: 85%;
+
+  }
+
+  .desc-section {
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
+/**/
+
+
+
+/*WHY US*/
+
+.why-us-to-choose {
+  background: var(--secondary-color);
+}
+
+.why-us-icons i {
+  font-size: 40px;
+  background: var(--secondary-color);
+}
+
+.why-us-icons span {
+  font-size: 24px;
+}
+
+.why-us-to-choose {
+  border-left: solid var(--secondary-color);
+  height: 60vh;
+  background: var(--secondary-color);
+
+}
+
+.why-us-icons {
+  background: var(--secondary-color);
+  width: 206vh;
+  height: 390px;
+  margin-left: -3.3rem;
+
+}
+
+.btn-contact-us button {
+  background-color: white;
+  border: 1px solid white;
+  padding: 0 1.5rem;
+}
+
+.btn-contact-us button:hover {
+
+  opacity: 0.9;
+}
+
+
+@media (max-width: 576px) {
+  .why-us-icons {
+    background: var(--secondary-color);
+    width: 115vw;
+    height: 990px;
+    margin-right: 2.2rem;
+
+
+
+  }
+}
+
+/*WHY US*/
+
+/*PESHO*/
+.pesho {
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.pesho i {
+  font-size: 32px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+h4 span {
+  border-color: #e9751a;
+}
+
+
+
+.col-12.col-lg-2 {
+  position: relative;
+}
+
+.pesho-img {
+  z-index: 1;
+}
+
+.pesho-border {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
+  bottom: 1.3rem;
+  left: 35px;
+  border-left: 30px solid var(--secondary-color);
+  z-index: 0;
+}
+
+/*PESHO*/
+
+/*Map and Form*/
+.map-and-form {
+  background: var(--secondary-color);
+}
+
+.form-btn {
+  background: #8a1352;
+  color: white;
+  border: #8a1352;
+
+}
+
+.form-btn:hover {
+  opacity: 0.7;
+}
+
+
+
+/*Map and Form*/
+
+/*FOOTER*/
+hr {
+  border-top: 1px solid white;
+  color: white;
+  opacity: 0.9;
+}
+
+
+
+@media (max-width: 576px) {
+  .form-ftr input,.form-ftr textarea {
+
+width: 100%!important;
+
+
+  }
+}
+
+@media (min-width: 976px) {
+  .form-ftr button  {
+    
+    margin-right: 10rem;
+
+  }
+}
+
+
+
+
+/*FOOTER END*/

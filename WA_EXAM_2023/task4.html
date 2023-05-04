@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <table id="users-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div>
+    <label for="search-input">Search user by ID:</label>
+    <input type="text" id="search-input">
+    <button id="search-button">Search</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  
+
+    const usersTable = $('#users-table tbody');
+    const searchInput = $('#search-input');
+    const searchButton = $('#search-button');
+
+ 
+    function fillUsersTable(users) {
+      usersTable.empty(); 
+
+    
+      $.each(users, function (i, user) {
+        const row = $('<tr>');
+
+       
+        $('<td>').text(user.id).appendTo(row);
+        $('<td>').text(user.name).appendTo(row);
+        $('<td>').text(user.lastName).appendTo(row);
+        $('<td>').text(user.age).appendTo(row);
+        $('<td>').text(user.salary).appendTo(row);
+
+        // add the row to the table
+        row.appendTo(usersTable);
+      });
+    }
+
+    // function to fetch all users from the API and fill the table
+    function getUsers() {
+      $.get('https://old.blacatzacademy.com/api/users')
+        .done(function (data) {
+          fillUsersTable(data);
+        })
+        .fail(function (error) {
+          console.error('Error:', error);
+        });
+    }
+
+   
+    getUsers();
+
+  
+    function getUserById(id) {
+      $.get(`https://old.blacatzacademy.com/api/users?id=${id}`)
+        .done(function (data) {
+          fillUsersTable(data); 
+        })
+        .fail(function (error) {
+          console.error('Error:', error);
+        });
+    }
+
+    
+    searchButton.click(function () {
+      const id = searchInput.val();
+      getUserById(id);
+      
+    });
+  </script>
+</body>
+</html>
